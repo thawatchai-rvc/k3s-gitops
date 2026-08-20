@@ -8,8 +8,8 @@ spec:
   source:
     repoURL: https://github.com/thawatchai-rvc/k3s-gitops.git
     targetRevision: HEAD
-    # path: apps/01-web-nginx
-    path: argocd
+    path: apps/01-web-nginx
+    # path: argocd
   destination:
     server: https://kubernetes.default.svc
     namespace: default
