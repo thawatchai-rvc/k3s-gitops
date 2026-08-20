@@ -6,6 +6,7 @@ metadata:
     app: web-nginx
 spec:
   replicas: 3
+  revisionHistoryLimit: 2
   selector:
     matchLabels:
       app: web-nginx
@@ -14,7 +15,6 @@ spec:
       labels:
         app: web-nginx
     spec:
-      revisionHistoryLimit: 2
       containers:
         - name: nginx
           # image: nginx:1.27-alpine
