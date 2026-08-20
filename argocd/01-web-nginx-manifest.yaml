@@ -1,15 +1,15 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: k3s-gitops
+  name: web-nginx
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/thawatchai-rvc/k3s-gitops.git
     targetRevision: HEAD
-    # path: apps/01-web-nginx
-    path: argocd
+    path: apps/01-web-nginx
+    # path: argocd
   destination:
     server: https://kubernetes.default.svc
     namespace: default

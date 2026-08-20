@@ -18,7 +18,7 @@ spec:
       containers:
         - name: nginx
           # image: nginx:1.27-alpine
-          image: thawatchai95/hello-web:lasted
+          image: thawatchai95/hello-web:latest
           ports:
             - containerPort: 80
           resources:
