@@ -5,7 +5,7 @@ metadata:
   labels:
     app: hello-web
 spec:
-  ingressClassName: traefik
+  ingressClassName: nginx
   rules:
     - host: hello-web.local
       http:

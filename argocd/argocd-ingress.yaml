@@ -14,7 +14,7 @@ metadata:
   namespace: argocd
 
 spec:
-  ingressClassName: traefik
+  ingressClassName: nginx
 
   rules:
     - host: argocd.lab.com
